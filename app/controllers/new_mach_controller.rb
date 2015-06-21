@@ -1,9 +1,8 @@
 class NewMachController < ApplicationController
+  skip_before_filter  :verify_authenticity_token
+
   def index
-    #data=5
-    #respond_to do |format|
-      #format.json { render json: data}
-    #end
-    @puts=NewMachGem::MathematicalOperations.operations(2,3,'*')
+    @puts=NewMachGem::MathematicalOperations.operations(params[:x1].to_i,params[:x2].to_i,params[:str])
+    render json: @puts, status: :ok
   end
 end
