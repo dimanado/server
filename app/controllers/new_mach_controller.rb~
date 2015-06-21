@@ -2,6 +2,11 @@ class NewMachController < ApplicationController
   skip_before_filter  :verify_authenticity_token
 
   def index
+<<<<<<< HEAD
     @puts=NewMachGem::MathematicalOperations.operations(params[:x1].to_i,params[:x2].to_i,params[:str])
+=======
+    @puts=NewMachGem::MathematicalOperations.operations(2,3,'*')
+>>>>>>> new version
+    render json: @puts, status: :ok
   end
 end
