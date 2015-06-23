@@ -1,8 +1,15 @@
 GIT
-  remote: https://github.com/dimanado/new_mach_gem.git
-  revision: 315f2c67bb414850d1f2cb2d726a00b2c87261dc
+  remote: https://github.com/FeniX717/new_math.git
+  revision: ca356e22fa37099d02761b00e8a0d81534d8f460
   specs:
-    new_mach_gem (0.0.1)
+    new_math (1.0.1)
+      new_mach_gem
+
+GIT
+  remote: https://github.com/dimanado/new_mach_gem.git
+  revision: 9e1be0969256bd4a1fef69e4b176a7cc76971f97
+  specs:
+    new_mach_gem (1.0.1)
 
 GEM
   remote: https://rubygems.org/
@@ -152,7 +159,8 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
   jquery-rails
-  new_mach_gem!
+  new_mach_gem (= 1.0.1)!
+  new_math (= 1.0.1)!
   rails (= 4.2.2)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
